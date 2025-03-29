@@ -1613,6 +1613,9 @@
   .z-\[-1\] {
     z-index: -1;
   }
+  .z-\[0\] {
+    z-index: 0;
+  }
   .modal-box {
     grid-column-start: 1;
     grid-row-start: 1;
