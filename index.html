@@ -189,58 +189,90 @@
           </ul>
           <button
             class="btn-custom ml-[52px] h-[45px] w-[183px] lg:block hidden"
+            onclick="new_form_modal.showModal()"
           >
             Заказать звонок
           </button>
         </div>
       </div>
     </section>
-    <nav class="bg-[#487b64] hidden lg:block">
+    <nav class="bg-[#487b64] hidden xl:block">
       <ul
         class="max-w-[1480px] w-full mx-auto flex justify-between lg:px-[120px] px-[10px]"
       >
         <li
-          class="w-[205px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
+          class="w-[235px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
         >
-          Дрова
+          <a href="#" class="text-nowrap">Капельница “От похмелья”</a>
         </li>
         <li
-          class="w-[205px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
+          class="w-[235px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
         >
-          Пиломатериалы
+          <a href="#" class="text-nowrap">Капельница “Детокс”</a>
         </li>
         <li
-          class="w-[205px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
+          class="w-[235px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
         >
-          Настоящие отзывы
+          <a href="#" class="text-nowrap">Капельница “Лаенек”</a>
         </li>
         <li
-          class="w-[205px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
+          class="w-[235px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
         >
-          Вопрос/ответ
+          <a href="#" class="text-nowrap">Капельница “Железо”</a>
         </li>
         <li
-          class="w-[205px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
+          class="w-[235px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
         >
-          Контакты
-        </li>
-        <li
-          class="w-[205px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
-        >
-          Полезное/Подарок$
+          <a href="#" class="text-nowrap">Капельница “Золушка”</a>
         </li>
       </ul>
     </nav>
-    <nav class="bg-[#487b64] lg:hidden block">
+    <nav class="bg-[#487b64] xl:hidden block sticky top-0 w-full z-100">
       <div
         class="max-w-[1480px] w-full mx-auto flex justify-between lg:px-[120px] px-[10px] h-[50px] items-center"
       >
         <div class="text-white text-[15px] font-normal">Меню</div>
         <div class="flex gap-x-[15px] items-center">
-          <img src="./src/assets/icons/phone-call.png" alt="phone" />
+          <img
+            src="./src/assets/icons/phone-call.png"
+            alt="phone"
+            onclick="new_form_modal.showModal()"
+          />
           <img src="./src/assets/icons/email.png" alt="email" />
-          <img src="./src/assets/icons/menu.png" alt="menu" />
+          <img src="./src/assets/icons/menu.png" alt="menu" id="burgerMenu" />
         </div>
+        <ul
+          class="absolute bg-[#66a58f] text-white left-0 top-[50px] w-full z-100"
+          id="mobileMenu"
+        >
+          <li
+            class="h-[37px] flex items-center pl-[20px] border-b-[1px] border-white"
+          >
+            <a href="#" class="text-[15px] font-normal"
+              >Капельница “От похмелья”</a
+            >
+          </li>
+          <li
+            class="h-[37px] flex items-center pl-[20px] border-b-[1px] border-white"
+          >
+            <a href="#" class="text-[15px] font-normal">Капельница “Детокс”</a>
+          </li>
+          <li
+            class="h-[37px] flex items-center pl-[20px] border-b-[1px] border-white"
+          >
+            <a href="#" class="text-[15px] font-normal">Капельница “Лаенек”</a>
+          </li>
+          <li
+            class="h-[37px] flex items-center pl-[20px] border-b-[1px] border-white"
+          >
+            <a href="#" class="text-[15px] font-normal">Капельница “Железо”</a>
+          </li>
+          <li
+            class="h-[37px] flex items-center pl-[20px] border-b-[1px] border-white"
+          >
+            <a href="#" class="text-[15px] font-normal">Капельница “Золушка”</a>
+          </li>
+        </ul>
       </div>
     </nav>
     <section class="relative">
@@ -1296,7 +1328,7 @@
               <img
                 src="./src/assets/ball8.png"
                 alt="ball 8"
-                class="block lg:hidden absolute right-[-30px] top-[-100px]"
+                class="block lg:hidden absolute right-[0] top-[-100px]"
               />
             </div>
             <p
@@ -1824,5 +1856,90 @@
         </div>
       </div>
     </div>
+    <script>
+      const burgerMenu = document.getElementById("burgerMenu");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const menuItems = mobileMenu.querySelectorAll("li");
+
+      function toggleMenu() {
+        const isOpen = mobileMenu.classList.toggle("open");
+
+        burgerMenu.src = isOpen
+          ? "./src/assets/icons/menuClose.png"
+          : "./src/assets/icons/menu.png";
+      }
+
+      burgerMenu.addEventListener("click", toggleMenu);
+
+      // Закрытие меню при клике на любой пункт списка
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          mobileMenu.classList.remove("open");
+          burgerMenu.src = "./src/assets/icons/menu.png";
+        });
+      });
+    </script>
   </footer>
+  <!-- <button class="btn" onclick="new_form_modal.showModal()">open modal</button> -->
+  <dialog id="new_form_modal" class="modal">
+    <div
+      class="modal-box bg-[#41705b] text-white max-w-full h-full lg:h-auto lg:max-w-[560px] w-full lg:px-[103px] lg:py-[50px] lg:rounded-[10px] rounded-none"
+    >
+      <form method="dialog">
+        <button class="absolute right-2 top-2">
+          <img
+            src="./src/assets/icons/menuClose.png"
+            alt="close"
+            class="cursor-pointer"
+          />
+        </button>
+      </form>
+      <p class="text-[25px] text-center font-bold">Заполните форму</p>
+      <p class="text-[17px] font-light text-center">
+        Оставьте заявку и мы свяжемся с вами!
+      </p>
+      <div class="grid-cols-1 grid gap-x-[30px] gap-y-[21px] mt-[25px]">
+        <input
+          type="text"
+          placeholder="Иван Иванов"
+          class="input input-custom w-auto"
+        />
+        <div>
+          <label class="input validator input-custom w-full">
+            <input
+              type="tel"
+              class="tabular-nums w-full"
+              required
+              placeholder="+7 (900) 123-45-67"
+              pattern="[0-9]*"
+              minlength="11"
+              maxlength="11"
+              title="Must be 10 digits"
+            />
+          </label>
+        </div>
+        <select class="select input-custom w-auto">
+          <option disabled selected>Выберите вид капельницы</option>
+          <option>Капельница 1</option>
+          <option>Капельница 2</option>
+          <option>Капельница 3</option>
+        </select>
+        <select class="select input-custom w-auto">
+          <option selected>Выезд на дом</option>
+          <option>Приезд в больницу</option>
+        </select>
+      </div>
+      <div class="flex flex-col gap-x-[31px]">
+        <button
+          class="btn-custom h-[55px] w-full text-[18px] font-bold mt-[21px] bg-[#e9f4ef] text-[#000] hover:bg-[#d1e8de] hover:text-[#000]"
+        >
+          Отправить заявку
+        </button>
+        <div class="mt-[20px] text-[#fff] text-[14px] font-light">
+          Нажимая кнопку “Отправить заявку”, Вы даете согласие на обработку
+          Ваших персональных данных
+        </div>
+      </div>
+    </div>
+  </dialog>
 </html>

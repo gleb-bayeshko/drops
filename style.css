@@ -57,6 +57,7 @@
 
   body {
     font-family: var(--default-font-family);
+    overflow-x: hidden;
   }
 }
 
@@ -95,4 +96,15 @@ select {
   align-items: center;
   height: 100%;
   line-height: 20px !important;
+}
+
+#mobileMenu {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
+
+#mobileMenu.open {
+  opacity: 1;
+  visibility: visible;
 }
