@@ -58,12 +58,13 @@
   body {
     font-family: var(--default-font-family);
     overflow-x: hidden;
+    color: #000;
   }
 }
 
 @layer components {
   .btn-custom {
-    @apply cursor-pointer px-4 py-2 bg-[#66a589] text-white font-semibold rounded-[5px] hover:bg-[#588a73] focus:outline-none focus:ring-2;
+    @apply cursor-pointer px-4 py-2 bg-[#e1d3b9] text-white font-semibold rounded-[5px] hover:bg-[#e0cfaf] focus:outline-none focus:ring-2;
   }
 }
 
@@ -107,4 +108,20 @@ select {
 #mobileMenu.open {
   opacity: 1;
   visibility: visible;
+}
+
+.swiper-pagination-bullets {
+  width: max-content !important;
+  margin: 0 5px!important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background: rgba(165, 169, 199)!important;
+  margin: 0 5px!important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #bcb28e!important;
 }
