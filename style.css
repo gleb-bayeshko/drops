@@ -112,16 +112,29 @@ select {
 
 .swiper-pagination-bullets {
   width: max-content !important;
-  margin: 0 5px!important;
+  margin: 0 5px !important;
 }
 
 .swiper-pagination-bullet {
   width: 10px !important;
   height: 10px !important;
-  background: rgba(165, 169, 199)!important;
-  margin: 0 5px!important;
+  background: rgba(165, 169, 199) !important;
+  margin: 0 5px !important;
 }
 
 .swiper-pagination-bullet-active {
-  background: #bcb28e!important;
+  background: #bcb28e !important;
+}
+
+.cally ::part(button day today) {
+  background-color: rgb(158, 143, 114) !important;
+  color: white !important;
+}
+
+.cally {
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
 }

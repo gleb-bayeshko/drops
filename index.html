@@ -10,7 +10,7 @@
       name="description"
       content="Профессиональная контурная пластика губ в Санкт-Петербурге с естественным результатом. Увеличение объема, коррекция формы, устранение асимметрии филлерами на основе гиалуроновой кислоты. Безопасно, эффектно, с индивидуальным подходом. Запишитесь на консультацию!"
     />
-    <link rel="canonical" href="https://site.com/" />
+    <link rel="canonical" href="https://guby-spb.ru/" />
     <meta name="robots" content="index, follow" />
     <script type="application/ld+json">
       {
@@ -18,12 +18,12 @@
         "@graph": [
           {
             "@type": "MedicalClinic",
-            "@id": "https://site.com/#organization",
+            "@id": "https://guby-spb.ru/#organization",
             "name": "Контурная пластика губ в Санкт-Петербурге",
             "description": "Профессиональная контурная пластика губ в Санкт-Петербурге с естественным результатом. Увеличение объема, коррекция формы, устранение асимметрии филлерами на основе гиалуроновой кислоты. Безопасно, эффектно, с индивидуальным подходом. Запишитесь на консультацию!",
-            "url": "https://site.com/",
-            "logo": "https://site.com/src/assets/logo.png",
-            "image": ["https://site.com/src/assets/bannerImage.png"],
+            "url": "https://guby-spb.ru/",
+            "logo": "https://guby-spb.ru/src/assets/logo.png",
+            "image": ["https://guby-spb.ru/src/assets/bannerImage.png"],
             "telephone": ["+73452606698", "+79292696698"],
             "address": {
               "@type": "PostalAddress",
@@ -176,19 +176,19 @@
           },
           {
             "@type": "BreadcrumbList",
-            "@id": "https://site.com/#breadcrumbs",
+            "@id": "https://guby-spb.ru/#breadcrumbs",
             "itemListElement": [
               {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Главная",
-                "item": "https://site.com/"
+                "item": "https://guby-spb.ru/"
               }
             ]
           },
           {
             "@type": "FAQPage",
-            "@id": "https://site.com/#faq",
+            "@id": "https://guby-spb.ru/#faq",
             "mainEntity": [
               {
                 "@type": "Question",
@@ -286,34 +286,49 @@
         </div>
       </div>
     </section>
-    <nav class="bg-[#9e8f72] hidden xl:block">
+    <nav
+      class="bg-[#9e8f72] hidden xl:block sticky top-0 z-[50] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:shadow-sm"
+      id="desktopNav"
+    >
       <ul
         class="max-w-[1480px] w-full mx-auto flex justify-between lg:px-[120px] px-[10px]"
       >
         <li
-          class="w-[235px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
+          class="h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
         >
-          <a href="#" class="text-nowrap">Филер 1</a>
+          <a href="#procedureHeader" class="text-nowrap">Процедура</a>
         </li>
         <li
-          class="w-[235px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
+          class="h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
         >
-          <a href="#" class="text-nowrap">Филер 2</a>
+          <a href="#worksHeader" class="text-nowrap">Наши работы</a>
         </li>
         <li
-          class="w-[235px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
+          class="h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
         >
-          <a href="#" class="text-nowrap">Филер 3</a>
+          <a href="#advantagesHeader" class="text-nowrap">Преимущества</a>
         </li>
         <li
-          class="w-[235px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
+          class="h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
         >
-          <a href="#" class="text-nowrap">Филер 4</a>
+          <a href="#peculiarityHeader" class="text-nowrap">Особенности</a>
         </li>
         <li
-          class="w-[235px] h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
+          class="h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
         >
-          <a href="#" class="text-nowrap">Филер 5</a>
+          <a href="#pricesHeader" class="text-nowrap">Цены</a>
+        </li>
+        <li
+          class="h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
+        >
+          <a href="#doctorsHeader" class="text-nowrap">Специалисты</a>
+        </li>
+        <li
+          class="h-[60px] flex justify-center items-center text-white text-[17px] font-[300]"
+        >
+          <a href="#contraindicationsHeader" class="text-nowrap"
+            >Противопоказания</a
+          >
         </li>
       </ul>
     </nav>
@@ -409,7 +424,7 @@
             <div
               class="rounded-[5px] bg-white p-[15px] w-[80px] h-[80px] absolute top-[50%] translate-y-[-50%]"
             >
-              <img src="./src/assets/icons/liquor.png" />
+              <img src="./src/assets/top/team.png" />
             </div>
             <div
               class="bg-[#9e8f72] rounded-[5px] py-[24px] pr-[30px] pl-[64px] ml-[40px]"
@@ -426,7 +441,7 @@
             <div
               class="rounded-[5px] bg-white p-[15px] w-[80px] h-[80px] absolute top-[50%] translate-y-[-50%]"
             >
-              <img src="./src/assets/icons/liquor.png" />
+              <img src="./src/assets/top/protection.png" />
             </div>
             <div
               class="bg-[#9e8f72] rounded-[5px] py-[24px] pr-[30px] pl-[64px] ml-[40px]"
@@ -441,7 +456,7 @@
             <div
               class="rounded-[5px] bg-white p-[15px] w-[80px] h-[80px] absolute top-[50%] translate-y-[-50%]"
             >
-              <img src="./src/assets/icons/liquor.png" />
+              <img src="./src/assets/top/anti-aging.png" />
             </div>
             <div
               class="bg-[#9e8f72] rounded-[5px] py-[24px] pr-[30px] pl-[64px] ml-[40px]"
@@ -462,6 +477,7 @@
     >
       <h2
         class="mb-[30px] lg:mb-[35px] text-[#3e3e3e] text-[32px] lg:text-[37px] font-[700]"
+        id="procedureHeader"
       >
         Процедура контурной пластики
       </h2>
@@ -492,7 +508,10 @@
       class="max-w-[1480px] w-full mx-auto lg:px-[120px] px-[10px] mt-[80px] lg:mt-[60px]"
     >
       <div class="flex justify-between lg:mb-[40px] flex-col lg:flex-row">
-        <h2 class="text-[#3e3e3e] text-[32px] lg:text-[37px] font-[700]">
+        <h2
+          class="text-[#3e3e3e] text-[32px] lg:text-[37px] font-[700]"
+          id="worksHeader"
+        >
           Наши работы
         </h2>
         <div class="flex items-end lg:mb-0 mb-[20px] lg:mt-0 mt-[8px]">
@@ -526,13 +545,14 @@
       >
         <h2
           class="mb-[20px] lg:mb-[35px] text-[#3e3e3e] text-[32px] lg:text-[37px] font-[700]"
+          id="advantagesHeader"
         >
           Преимущества процедуры
         </h2>
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-x-[64px] gap-y-[52px]">
           <div>
             <div class="w-[80px] h-[80px] p-[15px] rounded-[5px] bg-[#bcad8e]">
-              <img src="./src/assets/icons/liquorWhite.png" />
+              <img src="./src/assets/advantages/shield.png" />
             </div>
             <div
               class="text-[#bcad8e] text-[20px] font-[700] leading-[27px] mt-[11px] mb-[7px]"
@@ -546,7 +566,7 @@
           </div>
           <div>
             <div class="w-[80px] h-[80px] p-[15px] rounded-[5px] bg-[#bcad8e]">
-              <img src="./src/assets/icons/liquorWhite.png" />
+              <img src="./src/assets/advantages/clock.png" />
             </div>
             <div
               class="text-[#bcad8e] text-[20px] font-[700] leading-[27px] mt-[11px] mb-[7px]"
@@ -559,7 +579,7 @@
           </div>
           <div>
             <div class="w-[80px] h-[80px] p-[15px] rounded-[5px] bg-[#bcad8e]">
-              <img src="./src/assets/icons/liquorWhite.png" />
+              <img src="./src/assets/advantages/smile.png" />
             </div>
             <div
               class="text-[#bcad8e] text-[20px] font-[700] leading-[27px] mt-[11px] mb-[7px]"
@@ -573,7 +593,7 @@
           </div>
           <div>
             <div class="w-[80px] h-[80px] p-[15px] rounded-[5px] bg-[#bcad8e]">
-              <img src="./src/assets/icons/liquorWhite.png" />
+              <img src="./src/assets/advantages/chin-massager.png" />
             </div>
             <div
               class="text-[#bcad8e] text-[20px] font-[700] leading-[27px] mt-[11px] mb-[7px]"
@@ -593,6 +613,7 @@
       >
         <h2
           class="mb-[20px] lg:mb-[40px] text-[#3e3e3e] text-[32px] lg:text-[37px] font-[700]"
+          id="peculiarityHeader"
         >
           Особенности проведения процедуры
         </h2>
@@ -743,6 +764,7 @@
       >
         <h2
           class="mb-[20px] lg:mb-[40px] text-[#3e3e3e] text-[32px] lg:text-[37px] font-[700]"
+          id="pricesHeader"
         >
           Прайс лист
         </h2>
@@ -1190,6 +1212,7 @@
     >
       <h2
         class="mb-[36px] lg:mb-[40px] text-[#3e3e3e] text-[32px] lg:text-[37px] font-[700]"
+        id="doctorsHeader"
       >
         Кто проводит процедуру?
       </h2>
@@ -1200,7 +1223,7 @@
             alt="doctor 1"
             class="rounded-[10px]"
           />
-          <div class="text-[#66a589] text-[20px] font-bold mt-[28px]">
+          <div class="text-[#9e8f72] text-[20px] font-bold mt-[28px]">
             Дубская Мария Акимовна
           </div>
           <div
@@ -1217,7 +1240,7 @@
             alt="doctor 2"
             class="rounded-[10px]"
           />
-          <div class="text-[#66a589] text-[20px] font-bold mt-[28px]">
+          <div class="text-[#9e8f72] text-[20px] font-bold mt-[28px]">
             Калашников Даниил Сергеев
           </div>
           <div
@@ -1233,7 +1256,7 @@
             alt="doctor 3"
             class="rounded-[10px]"
           />
-          <div class="text-[#66a589] text-[20px] font-bold mt-[28px]">
+          <div class="text-[#9e8f72] text-[20px] font-bold mt-[28px]">
             Менжинская Руслана
           </div>
           <div
@@ -1250,6 +1273,7 @@
     >
       <h2
         class="mb-[40px] text-[#3e3e3e] text-[32px] lg:text-[37px] font-[700]"
+        id="contraindicationsHeader"
       >
         Противопоказания
       </h2>
@@ -1324,7 +1348,7 @@
         Где мы находимся?
       </h2>
       <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A758dd35eb10d5b996b4d69022627c70bc091879a0e70bd0911799780615819e9&amp;source=constructor"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A2aaa4557a0d256683ec93ca2572aed70e93ba9ac93dcf9da467a297c4f957bea&amp;source=constructor"
         width="100%"
         height="411"
         frameborder="0"
@@ -1519,14 +1543,53 @@
         </div>
         <select class="select input-custom w-auto">
           <option disabled selected>Выберите вид филера</option>
-          <option>Филер 1</option>
-          <option>Филер 2</option>
-          <option>Филер 3</option>
+          <option>Belotero Balance</option>
+          <option>Belotero Intense</option>
+          <option>Belotero Lips Shape</option>
+          <option>Juvederm Ultra Smile</option>
+          <option>Juvederm Ultra 3</option>
+          <option>Stylage Lips</option>
         </select>
-        <select class="select input-custom w-auto">
-          <option selected>Дата записи</option>
-          <option>Дата записи</option>
-        </select>
+        <button
+          popovertarget="cally-popover1"
+          class="select input-custom w-auto"
+          id="cally1"
+          style="anchor-name: --cally1"
+        >
+          Дата записи
+        </button>
+        <div
+          popover
+          id="cally-popover1"
+          class="dropdown bg-base-100 rounded-box shadow-lg"
+          style="position-anchor: --cally1"
+        >
+          <calendar-date
+            class="cally"
+            onchange="{document.getElementById('cally1').innerText = this.value}"
+            id="calendar1"
+          >
+            <svg
+              aria-label="Previous"
+              class="fill-current size-4"
+              slot="previous"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+            </svg>
+            <svg
+              aria-label="Next"
+              class="fill-current size-4"
+              slot="next"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+            </svg>
+            <calendar-month></calendar-month>
+          </calendar-date>
+        </div>
       </div>
       <div class="flex flex-col lg:flex-row gap-x-[31px]">
         <button
@@ -1812,12 +1875,14 @@
         </div>
       </div>
     </div>
+    <script src="./src/libs/cally/cally.js" type="module"></script>
     <script src="./src/libs/swiper/swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       const swiperWroks = new Swiper(".works-swiper", {
         slidesPerView: 3,
         spaceBetween: 26,
+        loop: true,
         navigation: {
           nextEl: "#worksNext",
           prevEl: "#worksPrev",
@@ -1838,6 +1903,7 @@
 
       const swiperReviews = new Swiper(".reviews-swiper", {
         slidesPerView: 1,
+        loop: true,
         navigation: {
           nextEl: "#reviewsNext",
           prevEl: "#reviewsPrev",
@@ -1870,6 +1936,11 @@
           burgerMenu.src = "./src/assets/icons/menu.png";
         });
       });
+    </script>
+    <script>
+      const today = new Date().toISOString().split("T")[0];
+      const calendar1 = document.getElementById("calendar1");
+      calendar1.setAttribute("min", today);
     </script>
   </footer>
   <!-- <button class="btn" onclick="new_form_modal.showModal()">open modal</button> -->
@@ -1912,14 +1983,53 @@
         </div>
         <select class="select input-custom w-auto">
           <option disabled selected>Выберите вид филера</option>
-          <option>Филер 1</option>
-          <option>Филер 2</option>
-          <option>Филер 3</option>
+          <option>Belotero Balance</option>
+          <option>Belotero Intense</option>
+          <option>Belotero Lips Shape</option>
+          <option>Juvederm Ultra Smile</option>
+          <option>Juvederm Ultra 3</option>
+          <option>Stylage Lips</option>
         </select>
-        <select class="select input-custom w-auto">
-          <option selected>Дата записи</option>
-          <option>Дата записи</option>
-        </select>
+        <button
+          popovertarget="cally-popover2"
+          class="select input-custom w-auto"
+          id="cally2"
+          style="anchor-name: --cally2"
+        >
+          Дата записи
+        </button>
+        <div
+          popover
+          id="cally-popover2"
+          class="dropdown bg-base-100 rounded-box shadow-lg"
+          style="position-anchor: --cally2"
+        >
+          <calendar-date
+            class="cally"
+            onchange="{document.getElementById('cally2').innerText = this.value}"
+            id="calendar2"
+          >
+            <svg
+              aria-label="Previous"
+              class="fill-current size-4"
+              slot="previous"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+            </svg>
+            <svg
+              aria-label="Next"
+              class="fill-current size-4"
+              slot="next"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+            </svg>
+            <calendar-month></calendar-month>
+          </calendar-date>
+        </div>
       </div>
       <div class="flex flex-col gap-x-[31px]">
         <button
@@ -1933,5 +2043,13 @@
         </div>
       </div>
     </div>
+    <script>
+      (() => {
+        const today = new Date().toISOString().split("T")[0];
+        const calendar2 = document.getElementById("calendar2");
+        console.log(calendar2);
+        calendar2.setAttribute("min", today);
+      })();
+    </script>
   </dialog>
 </html>
